@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vultr管理工具</string>
+    <string name="setting">设置</string>
+    <string name="api_key">Your API Key</string>
+    <string name="save">保存</string>
+    <string name="clear">清除</string>
+    <string name="api_key_blank">api key 不能为空</string>
+    <string name="api_key_not_valid">api key 不合法</string>
+</resources>

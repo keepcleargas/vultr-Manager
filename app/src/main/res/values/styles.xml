@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:background">#00F2F2EC</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

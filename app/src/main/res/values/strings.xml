@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vultr-Manager</string>
+    <string name="setting">setting</string>
+    <string name="api_key">Your API Key</string>
+    <string name="save">save</string>
+    <string name="clear">clear</string>
+    <string name="api_key_blank">api key is blank</string>
+    <string name="api_key_not_valid">api key is not valid</string>
+</resources>
