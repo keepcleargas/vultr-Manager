@@ -21,6 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.SettingActivity"></activity>
+        <activity android:name=".activities.InstanceActivity"
+            android:theme="@style/StyledIndicators"></activity>
     </application>
 
 </manifest>

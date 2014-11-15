@@ -36,4 +36,16 @@ public class HttpApi {
         requestParams.add("api_key", ApiKeyStore.getInstance().getApiKey(mContext));
         httpClient.get(mContext, url, requestParams, handler);
     }
+
+    public static void getOneInstnce(Context mContext, String subId, TextHttpResponseHandler handler) {
+        if (ApiKeyStore.getInstance().getApiKey(mContext).equals("")) {
+            AppUtil.showToast((Activity) mContext, mContext.getString(R.string.api_key_blank));
+            return;
+        }
+        String url = BASE_URL + "server/list";
+        RequestParams requestParams = new RequestParams();
+        requestParams.add("api_key", ApiKeyStore.getInstance().getApiKey(mContext));
+        requestParams.add("SUBID", subId);
+        httpClient.get(mContext, url, requestParams, handler);
+    }
 }

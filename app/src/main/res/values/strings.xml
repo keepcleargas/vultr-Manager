@@ -7,4 +7,21 @@
     <string name="clear">clear</string>
     <string name="api_key_blank">api key is blank</string>
     <string name="api_key_not_valid">api key is not valid</string>
+    <string name="server_info">server info</string>
+    <string name="usage_graph">usage graph</string>
+    <string name="ipv4">IPv4</string>
+    <string name="tool">tool</string>
+
+    <string name="basic">Basic</string>
+    <string name="more">More</string>
+    <string name="label">Label</string>
+    <string name="Location">Location</string>
+    <string name="Main_IP">Main IP</string>
+    <string name="OS">OS</string>
+    <string name="Initial_Username">Initial Username</string>
+    <string name="Initial_Password">Initial Password</string>
+    <string name="Memory">Memory</string>
+    <string name="Storage">Storage</string>
+    <string name="Bandwidth_Usage">Bandwidth Usage</string>
+    <string name="CPU_Count">CPU Count</string>
 </resources>

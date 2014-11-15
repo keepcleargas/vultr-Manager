@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -19,6 +20,7 @@ import com.zaozao.vultrManager.http.HttpApi;
 import com.zaozao.vultrManager.utils.ApiKeyStore;
 import com.zaozao.vultrManager.utils.AppUtil;
 import com.zaozao.vultrManager.utils.BusProvider;
+import com.zaozao.vultrManager.utils.IConstant;
 
 import org.apache.http.Header;
 
@@ -63,6 +65,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         instanceAdapter = new InstanceAdapter(this, instanceList);
         listView.setAdapter(instanceAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Instance instance = (Instance) adapterView.getAdapter().getItem(i);
+                Intent goToInfo = new Intent(MainActivity.this, InstanceActivity.class);
+                goToInfo.putExtra(IConstant.PARAMS_SUBID, instance.getSubId());
+                startActivity(goToInfo);
+            }
+        });
         getInstances();
     }
 
@@ -70,6 +81,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         if (ApiKeyStore.getInstance().getApiKey(this).equals("")) {
             return;
         }
+        swipeRefreshLayout.setRefreshing(true);
         HttpApi.getInstances(this, new TextHttpResponseHandler() {
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {

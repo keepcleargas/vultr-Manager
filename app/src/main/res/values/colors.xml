@@ -6,9 +6,14 @@
     <color name="bg">#F4F4F4</color>
 
     <color name="tab_text">#999999</color>
+    <color name="tab_text_pressed">@color/primary</color>
     <color name="white">#FFFFFF</color>
     <drawable name="ab_btn">@color/primary</drawable>
     <drawable name="ab_btn_pressed">@color/action</drawable>
     <drawable name="item_pressed">#eeeeee</drawable>
     <drawable name="item_white">@color/white</drawable>
+    <color name="yellow">#ffce37</color>
+    <color name="item_pressed">#eeeeee</color>
+    <color name="text_label">#999999</color>
+    <color name="line_color">#e2e2e2</color>
 </resources>

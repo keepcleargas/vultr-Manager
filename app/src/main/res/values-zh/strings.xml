@@ -7,4 +7,8 @@
     <string name="clear">清除</string>
     <string name="api_key_blank">api key 不能为空</string>
     <string name="api_key_not_valid">api key 不合法</string>
+    <string name="ipv4">IPv4</string>
+    <string name="server_info">基本信息</string>
+    <string name="tool">操作</string>
+    <string name="usage_graph">使用情况</string>
 </resources>
